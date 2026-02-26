@@ -1,0 +1,12 @@
+- make a logo
+- make profile photo more centered in column and move with scroll
+- go over about with indi and edit
+- take a better profile photo
+- fill in projects
+	- get yess running to show example input and output
+		- add input file and output to the webpage
+	- Terrain
+		- resize iframe
+		- fill in rest of the page
+	- go over new pages
+
