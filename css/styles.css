@@ -22,12 +22,12 @@ body {
 	line-height: 1.7;
 }
 
-p a {
+a {
 	color: var(--text);
 	/* text-decoration: none; */
 }
 
-p a:hover {
+a:hover {
 	color: #555555;
 }
 
