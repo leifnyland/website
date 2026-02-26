@@ -241,6 +241,9 @@ nav a:hover {
 }
 
 /* CONTACT */
+#contact a {
+	text-decoration: none;
+}
 
 
 /* FOOTER */
