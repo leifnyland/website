@@ -196,6 +196,7 @@ nav a:hover {
 	}
 }
 
+
 /* SKILLS */
 
 /* SKILLS GRID */
@@ -265,6 +266,12 @@ footer {
 
 .info-image img {
 	width: 100%;
+}
+
+/* PROJECT PAGES */
+iframe {
+	width: 900px;
+	height: 800px;
 }
 
 /* MOBILE */
