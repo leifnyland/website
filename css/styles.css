@@ -245,6 +245,18 @@ footer {
 	color: var(--muted);
 }
 
+/* PROJECT PAGES */
+
+.info-images {
+	display: grid;
+	max-width: 1200px;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.info-image img {
+	width: 100%;
+}
+
 /* MOBILE */
 
 @media (max-width: 800px) {
