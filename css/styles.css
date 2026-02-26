@@ -22,6 +22,16 @@ body {
 	line-height: 1.7;
 }
 
+p a {
+	color: var(--text);
+	/* text-decoration: none; */
+}
+
+p a:hover {
+	color: #555555;
+}
+
+
 /* NAV */
 
 .nav {
@@ -231,10 +241,7 @@ nav a:hover {
 }
 
 /* CONTACT */
-#contact a {
-	color: var(--text);
-	text-decoration: none;
-}
+
 
 /* FOOTER */
 
