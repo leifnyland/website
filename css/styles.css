@@ -122,6 +122,8 @@ nav a:hover {
 }
 
 .about-image img {
+	display: block;
+	margin: auto;
 	width: 100%;
 }
 
