@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PROJECT NAME</title>
+	<title>DNN Robots</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/styles.css">
@@ -84,10 +84,35 @@
 			is a big reason why I would like to work more on this project. It should be possible to produce 
 			a comparible program using a DNN, and it is just my knowledge and implementation holding me back.
 		</p>
+
+		<p>The following videos show my best robots against some of the preprogrammed opponents on the default maps, 
+			in increasing opponent strenght. Many simple opponents are not shown, I just find these opponents particularly interesting.
+			Note some of the correct behaviors from the adversarial learning; the robots detonate when low on health and
+			adjacent to an enemy, correct attacking, moving off the spawn before the next spawn round, etc. Some 
+			interesting things can be learned about "proper" gameplay tactics: guard is minimally used, grouping
+			up seems to be a good idea, and avoiding conflict seems to be a good idea, since you only need to win by 1.
+			This last observation could be an emergent behavior from my gamestate, and not actually an intrinsic property
+			of the game.
+		</p>
+		<div class="video-grid">
+			<video controls>
+				<source src="./../media/robot_vids/best_v_snowflake_default.mp4" type="video/mp4">
+				Browser does not support video type
+			</video>
+			<video controls>
+				<source src="./../media/robot_vids/best_v_might_win_sometimes_default.mp4" type="video/mp4">
+				Browser does not support video type
+			</video>
+			<video controls>
+				<source src="./../media/robot_vids/best_btr_default.mp4" type="video/mp4">
+				Browser does not support video type
+			</video>
+		</div>
 		<h2>Technology Used</h2>
 		<ul>
 			<li>Deep Learning</li>
 			<li>Adversarial Learning</li>
+			<li>Keras</li>
 		</ul>
 
 	</main>
