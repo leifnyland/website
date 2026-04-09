@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PROJECT NAME</title>
+	<title>Lexer & Parser</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/styles.css">
@@ -24,20 +24,46 @@
 
 	<main class="section">
 
-		<h1>PROJECT NAME - <a href="" target="_blank">Github</a></h1>
+		<h1>Arithmetic Lexer & Parser - <a href="https://github.com/leifnyland/Lexer-Parser" target="_blank">Github</a></h1>
 		<p>
-			DESCRIPTION
+			Lexer and parser written in Haskell for a simple arithemtic language.
 		</p>
 		<h2>Objective</h2>
 		<p>
-
+			Lexers and parsers can be quite difficult to write, but they are essential for communication between 
+			humans and machines. They are the backbone on which all computer code runs. If done properly using haskell, 
+			lexers and parsers can be made in just a few minutes while still addressing all of the points which make up
+			the problem.
 		</p>
 		<h2>Methodology</h2>
-		<p></p>
+		<p>The language is as follows, written in haskell:</p>
+		<pre><code>
+type Vars = String                                  -- Variables
+
+data AExpr = Var Vars | Const Integer               -- Arithmetic expressions
+            | Add AExpr AExpr | Sub AExpr AExpr
+            | Mul AExpr AExpr | Div AExpr AExpr
+	deriving Show
+
+data BExpr = TT | FF                                -- Boolean expressions
+            | And BExpr BExpr | Or BExpr BExpr | Not BExpr
+            | Eql AExpr AExpr                       -- equality of arithmetic expressions
+            | Lt AExpr AExpr                        -- true if the first is less than the second
+            | Lte AExpr AExpr                       -- true if it's less than or equal to
+	deriving Show
+
+data Instr = Assign Vars AExpr                      -- assignment
+            | IfThenElse BExpr Instr Instr          -- conditional
+            | While BExpr Instr                     -- looping construct
+            | Do [Instr]                            -- a block of several instructions
+            | Nop                                   -- the "do nothing" instruction
+            | Return AExpr                          -- the final value to return
+	deriving Show
+		</code></pre>
 		<h2>Results</h2>
-		<p></p>
+		<p>See Github</p>
 		<h2>Technology Used</h2>
-		<ul></ul>
+		<ul>Haskell</ul>
 
 	</main>
 
