@@ -287,6 +287,13 @@ iframe {
 	width:100%;
 }
 
+.photo-grid {
+	display: grid;
+	max-width: 1200px;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 18px
+}
+
 /* MOBILE */
 
 @media (max-width: 800px) {
