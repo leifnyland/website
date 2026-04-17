@@ -291,7 +291,14 @@ iframe {
 	display: grid;
 	max-width: 1200px;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	gap: 18px
+	gap: 18px;
+}
+
+.photo img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	display: block;
 }
 
 /* MOBILE */
