@@ -353,6 +353,14 @@ iframe {
 	display: block;
 }
 
+.blog-photo img {
+	width: 40%;
+	height: auto;
+	margin: 0 auto;
+	object-fit: contain;
+	display:block
+}
+
 /* MOBILE */
 
 @media (max-width: 800px) {
